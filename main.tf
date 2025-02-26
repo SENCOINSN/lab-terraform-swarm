@@ -34,7 +34,7 @@ resource "aws_security_group" "demo-sg" {
   ingress {
     from_port   = 7946
     to_port     = 7946
-    protocol    = "-1"
+    protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
   ingress {
